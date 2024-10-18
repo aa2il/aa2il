@@ -1,1 +1,74 @@
-../windows.txt
+To get python up and running on windows
+
+1. Open python.org in browser & download windows installer
+2. Run the installer & Run it again to modify pyton to ???
+3. We'll use this to convert some of these programs to standalone exe's
+   pip install pyinstaller
+4. We'll also want to create installers for some of these programs:
+   inno ???
+
+################################################################################
+
+Let's test some basic functionality
+
+5. Demos - mostly work
+   Open command prompt,
+   cd Python/demos
+   Follow the instructions given in windoz.bat
+
+6. Sound - the last piece of the puzzle
+   cd ../sound
+   Follow the instructions given in windoz.bat
+
+################################################################################
+
+Ok, let's get some of the actuall apps up & running
+
+7. Libs - recouncile any diffs
+
+8. World clock - works great
+   cd ../wclock
+   Follow the instructions given in windoz.bat
+
+9. Grid plotter - works great
+   cd ../grids
+   Follow the instructions given in windoz.bat
+   
+10. Band map - works great
+   cd ../bandmap
+   Follow the instructions given in windoz.bat
+   
+11. Call history 
+   cd ../history
+   Follow the instructions given in windoz.bat
+
+12. cd ../pyKeyer - looking good so far, need to figure out connection to radio
+   Follow the instructions given in windoz.bat
+   
+13. cd ../pySat - this is a dead end for windoz until we replace pypredict
+   Follow the instructions given in windoz.bat
+   
+14. RBN analysis - works great
+   cd ../rbn_tool
+   Follow the instructions given in windoz.bat
+   
+15. ADIF manipulations - seems fine
+   cd ../adif_tool
+   Follow the instructions given in windoz.bat
+   
+16. Rig Control
+   cd ../ftdx
+   Follow the instructions given in windoz.bat
+   
+#########################################################################################################
+As for the piece de resistance ....
+
+15. cd ../pySDR
+    Download the soapy sdr installer for windows form
+    https://github.com/pothosware/PothosCore/wiki/Downloads
+
+    Download swig
+    
+    soapy.py
+
+    IN PROGRESSS .....

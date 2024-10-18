@@ -1,1 +1,93 @@
-../requirements.txt
+###############################################################################
+#
+# This should contain a list of all required packages for the various python
+# code found in this repository.  There are requirements files in each of the
+# individual code but they overlap heavily.  The idea was to encapsulate them
+# all in this one file.
+#
+###############################################################################
+#
+# This was how this used to work:
+#      pip3 install -r requirements.txt
+#      pip3 install --upgrade PyAudio
+#
+# but, in true linux fashion, it was broken in Python 3.11 - great job guys!
+# Moreover, there were significant and stupid changes to pyqt6 that broke
+# many of these codes.  The most problematic is the elimination of shortcuts
+# to various "enums."  I think I have tracked these down but I cannot understand
+# why these types of changes are made to mature packages.
+#
+# To overcome this nonsense, I have adopted a "sandbox" approah using miniconde.
+# See the requirements file for pySDR how this works.
+#
+# I have also tried sandboxing using venv.  It looks promising but needs further
+# exploration:
+#
+#    sudo apt install python3.12-venv
+#    mkdir -p ~/.venvs
+#    python3 -m venv ~/.venv --system-site-packages
+#    ~/.venv/bin/python -m pip install -r requirements.txt
+#
+###############################################################################
+#
+# Can also do this upgrade all the packages:
+# pip3 install -r requirements.txt --upgrade
+#
+# and this see what version is installed for a specific package
+# pip3 show pyqtgraph
+#
+# or this to see the versions of all packages
+# pip list
+#
+##############################################################################
+
+#pyqt5                # No longer used
+pyqt6
+#PySide6              # This seems to work but there is a bug that causes gui
+                      # program to hang on final exit - WHY IS THIS NOT ADDRESSED????!!!
+tkcalendar
+matplotlib
+pyqtgraph
+
+pyserial
+pyautogui
+pyudev
+psutil
+
+xlrd
+unidecode
+pyhamtools
+PyAudio>=0.2.12
+pyrtlsdr
+
+openpyxl
+pandas
+scipy
+levenshtein
+
+pypredict
+pyephem
+gpsd-py3
+pyinstaller
+
+pyproj
+cartopy
+shapely
+
+# Added these so --upgrade works - pyqtgraph needs these for some reason
+# and they dont automajically get upgraded :-(
+pyscreeze
+opencv-python
+
+# For windows
+#pywin32
+
+# From miniconda migration, also need these for some reason?!
+#lxml
+#cryptography
+#attrs
+#platformdirs
+#requests
+#requests-file
+#requests-toolbelt
+#beautifulsoup4
