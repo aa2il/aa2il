@@ -1,17 +1,18 @@
 To get python up and running on windows
 
 1. Open python.org in browser & download windows installer
-2. Run the installer & Run it again to modify pyton to ???
-3. We'll use this to convert some of these programs to standalone exe's
-   pip install pyinstaller
-4. We'll also want to create installers for some of these programs:
-   inno ???
+2. Run the installer
+3. Open command prompt
+4. We'll use this to convert some of these programs to standalone exe's:
+      pip install pyinstaller
+5. We'll also want to create installers for some of these programs:
+      inno ???
 
 ################################################################################
 
 Let's test some basic functionality
 
-5. Demos - mostly work
+5. Demos - need data dir also (for cartopy demo)
    Open command prompt,
    cd Python/demos
    Follow the instructions given in windoz.bat
@@ -22,9 +23,14 @@ Let's test some basic functionality
 
 ################################################################################
 
-Ok, let's get some of the actuall apps up & running
+Ok, let's get some of the actual apps up & running
 
-7. Libs - recouncile any diffs
+7. Libs
+   Need to Python/libs to PYTHONPATH.
+   Can do this each time:
+       set PYTHONPATH=%PYTHONPATH%;C:\Usrs\???\Python\libs
+   or, to make it permanent:
+       setx PYTHONPATH %PYTHONPATH%;C:\Usrs\???\Python\libs
 
 8. World clock - works great
    cd ../wclock
@@ -42,10 +48,10 @@ Ok, let's get some of the actuall apps up & running
    cd ../history
    Follow the instructions given in windoz.bat
 
-12. cd ../pyKeyer - looking good so far, need to figure out connection to radio
+12. cd ../pyKeyer - So far so good - need to connect keyer ...
    Follow the instructions given in windoz.bat
    
-13. cd ../pySat - this is a dead end for windoz until we replace pypredict
+13. cd ../pySat - Looking good - need to handle initial startup with no .satrc
    Follow the instructions given in windoz.bat
    
 14. RBN analysis - works great
@@ -56,8 +62,16 @@ Ok, let's get some of the actuall apps up & running
    cd ../adif_tool
    Follow the instructions given in windoz.bat
    
-16. Rig Control
+16a. Rig Control - haven't tested in winblows 11
    cd ../ftdx
+   Follow the instructions given in windoz.bat
+   
+16b. Rig Control - haven't tested in winblows 11
+   cd ../pyRig
+   Follow the instructions given in windoz.bat
+   
+16c. Rig Control  - haven't tested in winblows 11
+   cd ../findRig
    Follow the instructions given in windoz.bat
    
 #########################################################################################################
