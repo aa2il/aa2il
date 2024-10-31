@@ -74,15 +74,6 @@ Ok, let's get some of the actual apps up & running
    cd ../findRig
    Follow the instructions given in windoz.bat
    
-#########################################################################################################
-As for the piece de resistance ....
+17. cd ../pySDR
+    This is very much a work in progress under winblows BUT most of the functionality of this code can be achieved by following the instructions given in windoz.bat
 
-15. cd ../pySDR
-    Download the soapy sdr installer for windows form
-    https://github.com/pothosware/PothosCore/wiki/Downloads
-
-    Download swig
-    
-    soapy.py
-
-    IN PROGRESSS .....
